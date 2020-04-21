@@ -152,6 +152,9 @@ void loop(){
               bool test = true; 
               while(1 == 1) {              
               if (test == true) {
+                ledcWrite(redChannel, 0);
+                ledcWrite(greenChannel, 0);
+                ledcWrite(blueChannel, 0);
                 ledcWrite(redChannel, limiteRGB);
                 test = false;
               }
