@@ -150,7 +150,7 @@ void loop(){
             else if (header.indexOf("GET /rainbow") >= 0) {
                             
               bool test = true; 
-              while(1 == 1) {              
+              while(1 == 1) { // Remove este while e ver no que dá. Talvez o a função loop fique iterando naturalmente aqui.
               if (test == true) {
                 ledcWrite(redChannel, 0);
                 ledcWrite(greenChannel, 0);
